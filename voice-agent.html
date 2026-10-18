@@ -1,0 +1,210 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Voice Agent · Servnology</title>
+  <meta name="description" content="Servnology's AI voice agent answers your hotel's phone line 24/7, handles guest questions, requests and complaints, and hands off to staff when needed.">
+  <meta property="og:title" content="Voice Agent · Servnology">
+  <meta property="og:description" content="Servnology's AI voice agent answers your hotel's phone line 24/7, handles guest questions, requests and complaints, and hands off to staff when needed.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600&display=swap">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<!-- ============================================================
+     HOW TO EDIT
+     - The words on this page live in this file. Find the text and edit it.
+     - Photos are <img> tags marked with an "IMAGE:" comment; swap the src URL.
+     - The header and footer are repeated on every page. If you change a
+       menu link or the email, change it on every .html file.
+     - Colors and fonts live at the top of css/styles.css.
+     ============================================================ -->
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<!-- ===================== HEADER ===================== -->
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="wordmark" href="index.html" aria-label="Servnology home">
+      <span class="wordmark-mark" aria-hidden="true"></span>Servnology
+    </a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+      <span class="nav-toggle-bar" aria-hidden="true"></span>
+      <span class="visually-hidden">Menu</span>
+    </button>
+    <nav class="site-nav" id="site-nav" aria-label="Main">
+      <a href="problem.html">The Problem</a>
+      <a href="voice-agent.html" aria-current="page">Voice Agent</a>
+      <a href="benefits.html">Benefits</a>
+      <a href="mission.html">Mission</a>
+      <a href="team.html">Team</a>
+      <a class="btn btn-small btn-brass" href="demo.html">Book a Demo</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ===================== PAGE HEADER ===================== -->
+  <section class="page-hero " aria-labelledby="page-title">
+    <!-- IMAGE: page header background -->
+    <img class="hero-img" src="https://images.unsplash.com/photo-1759038085950-1234ca8f5fed?auto=format&fit=crop&w=2200&q=80" alt="A hotel reception desk with warm wooden furniture" fetchpriority="high">
+    <div class="hero-shade" aria-hidden="true"></div>
+    <div class="wrap page-hero-inner">
+      <p class="eyebrow eyebrow-light">Our first product</p>
+      <h1 id="page-title">An AI voice agent for your front desk line.</h1>
+      <p class="page-hero-lede">It answers the way your best agent would: politely, accurately, and without putting anyone on hold.</p>
+    </div>
+  </section>
+
+  <!-- ===================== CALL DEMO (interactive) =====================
+       The example conversations live in js/main.js under CALL_SCENARIOS. -->
+  <section class="section call-demo" aria-labelledby="demo-title">
+    <div class="wrap call-demo-grid">
+      <div class="call-demo-copy">
+        <p class="eyebrow">Listen in</p>
+        <h2 id="demo-title">Hear how a call goes.</h2>
+        <p class="lede">
+          Pick a call. The agent answers naturally, uses your hotel's own information,
+          and brings in your team when a person is needed.
+        </p>
+        <div class="scenario-list" role="group" aria-label="Choose an example call">
+          <button class="scenario" type="button" data-scenario="breakfast" aria-pressed="true">A breakfast question</button>
+          <button class="scenario" type="button" data-scenario="checkout" aria-pressed="false">A late checkout</button>
+          <button class="scenario" type="button" data-scenario="complaint" aria-pressed="false">A guest complaint</button>
+        </div>
+        <p class="call-note">Example conversations. Your agent uses your hotel's real details and policies.</p>
+      </div>
+
+      <div class="phone-panel">
+        <div class="phone-panel-top">
+          <span class="call-status"><span class="live-dot" aria-hidden="true"></span><span id="call-title">Incoming call</span></span>
+          <button class="replay" type="button" id="call-replay">Replay</button>
+        </div>
+        <ol class="transcript" id="transcript" aria-live="polite"></ol>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== HOW IT WORKS ===================== -->
+  <section class="section product" id="how-it-works" aria-labelledby="how-title">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">How it works</p>
+        <h2 id="how-title">Four steps, no new phone number.</h2>
+      </div>
+      <!-- A real sequence, so the steps are numbered -->
+      <ol class="steps">
+        <li class="step">
+          <span class="step-num">1</span>
+          <h3>A guest calls</h3>
+          <p>Your hotel's existing number rings, just as it does today.</p>
+        </li>
+        <li class="step">
+          <span class="step-num">2</span>
+          <h3>The agent answers</h3>
+          <p>A natural, friendly voice picks up right away, every time.</p>
+        </li>
+        <li class="step">
+          <span class="step-num">3</span>
+          <h3>It handles or hands off</h3>
+          <p>Questions, requests and complaints are handled on the call. Anything that needs a person goes to your staff with context.</p>
+        </li>
+        <li class="step">
+          <span class="step-num">4</span>
+          <h3>Your desk stays with guests</h3>
+          <p>Your team keeps its attention on the people in the lobby.</p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ===================== FEATURES ===================== -->
+  <section class="section features-section" aria-labelledby="features-title">
+    <div class="wrap features">
+      <div class="features-intro">
+        <p class="eyebrow">What it does</p>
+        <h2 id="features-title">Everything a great front desk call should be.</h2>
+      </div>
+      <dl class="feature-list">
+        <div class="feature">
+          <dt>Available 24/7</dt>
+          <dd>Overnight, on holidays and during the check-in rush. No call goes to voicemail, even when no one is at the desk.</dd>
+        </div>
+        <div class="feature">
+          <dt>Natural conversation</dt>
+          <dd>Guests speak normally and get clear, gracious answers in a voice that suits your property.</dd>
+        </div>
+        <div class="feature">
+          <dt>Handles any guest call</dt>
+          <dd>Questions about rates, parking, breakfast and directions, plus requests and guest complaints.</dd>
+        </div>
+        <div class="feature">
+          <dt>Smart handoff to staff</dt>
+          <dd>When a call needs a human, it reaches the right person, along with what the guest already said.</dd>
+        </div>
+        <div class="feature">
+          <dt>Works with your systems</dt>
+          <dd>Integrates with Think Reservations today, and can connect to any PMS or hotel software you already use.</dd>
+        </div>
+      </dl>
+    </div>
+  </section>
+
+  <!-- ===================== INTEGRATIONS ===================== -->
+  <section class="integrations" aria-labelledby="integrations-title">
+    <div class="wrap integrations-inner">
+      <h2 id="integrations-title" class="integrations-title">Integrations</h2>
+      <p class="integration-name">Think Reservations</p>
+      <p class="integration-note">Connected today. Any other PMS or hotel software can be added.</p>
+    </div>
+  </section>
+
+  <!-- ===================== CALL TO ACTION ===================== -->
+  <section class="cta-band" aria-labelledby="cta-band-title">
+    <div class="wrap cta-band-inner">
+      <h2 id="cta-band-title">Ready to give your front desk its time back?</h2>
+      <a class="btn btn-brass" href="demo.html">Book a Demo</a>
+    </div>
+  </section>
+
+</main>
+
+<!-- ===================== FOOTER ===================== -->
+<footer class="site-footer">
+  <div class="wrap footer-inner">
+    <div class="footer-brand">
+      <a class="wordmark wordmark-light" href="index.html">
+        <span class="wordmark-mark" aria-hidden="true"></span>Servnology
+      </a>
+      <p>AI for hotels, built by hoteliers.</p>
+    </div>
+    <nav class="footer-nav" aria-label="Footer">
+      <a href="index.html">Home</a>
+      <a href="problem.html">The Problem</a>
+      <a href="voice-agent.html">Voice Agent</a>
+      <a href="benefits.html">Benefits</a>
+      <a href="mission.html">Mission</a>
+      <a href="team.html">Team</a>
+      <a href="demo.html">Book a Demo</a>
+    </nav>
+    <div class="footer-contact">
+      <p class="footer-label">Contact</p>
+      <!-- EMAIL: change to your servnology.com address once it is set up -->
+      <a href="mailto:aew244@cornell.edu">aew244@cornell.edu</a>
+    </div>
+  </div>
+  <div class="wrap footer-base">
+    <p>&copy; <span id="year">2026</span> Servnology. All rights reserved.</p>
+    <p>Photography from <a href="https://unsplash.com" rel="noopener">Unsplash</a>.</p>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
