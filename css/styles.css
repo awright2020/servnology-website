@@ -675,7 +675,7 @@ img.is-missing { opacity: 0; }
   transition: transform .25s var(--ease), box-shadow .25s var(--ease);
 }
 .founder:hover { transform: translateY(-3px); box-shadow: 0 18px 40px -24px rgba(19, 40, 35, .45); }
-.founder-photo { width: 100%; aspect-ratio: 4 / 3; max-width: 100%; object-fit: cover; }
+.founder-photo { width: 100%; aspect-ratio: 1 / 1; max-width: 100%; object-fit: cover; }
 .founder-photo-placeholder {
   position: relative; overflow: hidden;
   display: grid; place-items: center; align-content: center; gap: .6rem;
